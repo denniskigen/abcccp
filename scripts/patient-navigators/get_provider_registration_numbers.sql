@@ -1,10 +1,16 @@
+-- Gets the number of clients registered to the Oncology Screening and Diagnosis program per provider over a certain period of time
+
 SELECT
 	*
 FROM
 	amrs.patient_program
 WHERE
 	program_id = 40
-	AND DATE(date_created) BETWEEN ('2022-09-01') AND ('2022-09-31')
+	AND DATE(date_created) BETWEEN (
+		-- start_date
+	) AND (
+		-- end date
+	)
 	AND creator IN (
    -- creator id
   )

@@ -1,3 +1,5 @@
+-- Gets the details filled in breast and cervical screening encounters by a provider over a certain period of time.
+
 SELECT
 	CONCAT(COALESCE(pn.given_name, ''), ' ', COALESCE(pn.middle_name, ''), ' ', COALESCE(pn.family_name, '')) AS `person_name`,
 	enc.encounter_id,

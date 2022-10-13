@@ -1,3 +1,5 @@
+-- Gets important indicators and metadata drawn from cervical screening encounters over a certain period of time.
+
 SELECT
 	fccs.person_id,
 	CONCAT(COALESCE(pn.given_name, ''), ' ', COALESCE(pn.middle_name, ''), ' ', COALESCE(pn.family_name, '')) AS `person_name`,

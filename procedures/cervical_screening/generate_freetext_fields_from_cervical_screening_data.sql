@@ -1,3 +1,6 @@
+-- ** EXPERIMENTAL ** 
+-- Aggregates all freetext fields from cervical cancer screening encounters into a flat table
+
 CREATE PROCEDURE `generate_flat_cervical_cancer_screening_freetexts`(IN query_type VARCHAR(50), IN queue_number INT, IN queue_size INT, IN cycle_size INT)
 BEGIN
     -- Replace all occurrences of cervical_cancer_screening_freetexts with the name of your flat table. A simple find and replace should work fine.

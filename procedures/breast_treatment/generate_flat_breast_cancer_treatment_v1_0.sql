@@ -1,3 +1,5 @@
+-- Stored procedure that aggregates data from multiple breast treatment encounter types and generates a flat table which acts as the source of truth for all breast treatment data.
+
 CREATE PROCEDURE `generate_flat_breast_cancer_treatment_v1_0`(IN query_type varchar(50), IN queue_number int, IN queue_size int, IN cycle_size int)
 BEGIN
   SET @primary_table := "flat_breast_cancer_treatment";

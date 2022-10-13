@@ -1,3 +1,5 @@
+-- Stored procedure that aggregates data from multiple cervical screening encounter types and generates a flat table which acts as the source of truth for all cervical screening data.
+
 CREATE PROCEDURE `generate_flat_cervical_cancer_screening_v1_2`(IN query_type varchar(50), IN queue_number int, IN queue_size int, IN cycle_size int)
 BEGIN
   SET @primary_table := "flat_cervical_cancer_screening";
